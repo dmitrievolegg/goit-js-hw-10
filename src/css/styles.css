@@ -1,0 +1,114 @@
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+
+.header {
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-list a {
+  display: block;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #4e75ff;
+  transition: background-color var(--time) var(--cudic);
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  max-width: 1128px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  display: flex;
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-image {
+  transition: transform var(--time) var(--cudic);
+}
+
+.gallery-link:hover {
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
+
+.feedback-form {
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 408px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.feedback-form input {
+  margin-top: 8px;
+  display: block;
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 16px;
+  transition: border-color var(--time) var(--cudic);
+}
+
+.feedback-form input:hover,
+.feedback-form input:focus,
+.feedback-form textarea:hover,
+.feedback-form textarea:focus {
+  border-color: #000;
+}
+
+.feedback-form textarea {
+  resize: none;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #808080;
+}
+
+.feedback-form button {
+  font-family: inherit;
+  font-weight: 500;
+  margin-top: 8px;
+  padding: 8px 16px;
+  min-width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--time) var(--cudic);
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus {
+  background-color: #6c8cff;
+}
